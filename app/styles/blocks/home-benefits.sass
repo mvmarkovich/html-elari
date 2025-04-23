@@ -1,0 +1,78 @@
+.home-benefits
+    &__slider
+        position: relative
+        width: 100vw
+        left: 50%
+        padding: 0 16px @md 0 48px @lg 0 64px
+        transform: translateX(-50%)
+        overflow: hidden
+        max-width: 1920px
+
+    &__card
+        min-width: 256px @xl 370px
+        max-width: 256px @xl 370px
+
+        &--reverse
+            ^^&__body
+                justify-content: flex-end
+
+    &__body
+        position: relative
+        z-index: 1
+        min-height: 400px @xl 560px
+        border-radius: 34px
+        overflow: hidden
+        padding: 32px 24px 24px @xl 40px 32px 32px
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+
+    &__img
+        position: absolute 0 null null 0
+        size: 100%
+        object-fit: cover
+        z-index: -1
+
+    &__title
+        color: #1d1d1f
+        text: 600 20px 1 @xl 28px
+        letter-spacing: -0.01em
+        margin-bottom: 12px @xl 16px
+
+    &__text
+        color: #8b97a7
+        text: 600 14px 1 @xl 20px
+
+    &__headline
+        color: #5d82ea
+        text: 600 20px 1 @xl 28px
+        letter-spacing: -0.01em
+        margin-top: 64px @xl 84px
+
+        .text-blur
+            cursor: pointer
+            display: block
+            filter: blur(12px)
+            transition: .2s linear filter
+
+            &.active
+                filter: blur(0px)
+
+                &:hover
+                    filter: @lg blur(0px) 
+
+            &:hover
+                filter: @lg blur(8px)
+
+    &__slider-nav
+        position: @md absolute
+        bottom: @md -30px @xl -72px
+        right: @md 0
+        justify-content: @md-down center
+        margin-top: @md-down 16px
+
+        .slider-arrow
+            display: @xl-down none
+
+    .slider-pagination
+        display: @xl none

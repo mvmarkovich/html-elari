@@ -1,0 +1,76 @@
+.search
+    padding: 64px 0 @lg 20px 0 @xl 32px 0
+
+    &__container
+        max-width: 1920px
+        margin: 0 auto
+        padding: 0 32px @lg 0 124px @xl 0 180px
+
+    &__form
+        display: flex
+        align-items: center
+
+        &-submit
+            size: 32px @lg 24px @xl 32px
+            min-width: 32px @lg 24px @xl 32px
+            margin-right: 4px
+            justify-content: flex-start
+
+            &:before
+                size: 24px @lg 16px @xl 24px
+                min-width: 24px @lg 16px @xl 24px
+
+        &-input
+            font-family: var(--font-family)
+            color: #1d1d1f
+            text: 600 28px 1.1 @lg 20px @xl 28px
+            position: relative
+            min-height: 32px
+            padding: 0
+            width: 100%
+            outline: none
+            transition: .2s
+            resize: none
+            border: none
+        
+            &::placeholder
+                color: #838389
+
+    &__output
+        margin-top: 32px @xl 48px
+        margin-bottom: 20px @xl 32px
+
+        &-title
+            color: #838389
+            text: 14px @lg 12px @xl 16px
+
+        ul
+            list-style: none
+            padding: 0
+            margin: 24px 0 0 @lg 16px 0 0 @xl 24px 0 0
+
+            li
+                position: relative
+                margin-bottom: 24px @lg 20px @xl 24px
+
+                &:last-child
+                    margin: 0
+
+            a
+                color: #1d1d1f
+                text: 16px 1 @lg 12px @xl 16px
+                text-decoration: none
+                display: inline-flex
+            
+                &::before
+                    content: ''
+                    size: 16px @lg 12px @xl 16px
+                    min-width: 16px @lg 12px @xl 16px
+                    background: resolve("icons/search-output-item.svg") no-repeat center / contain
+                    margin: 0 12px 0 0
+                    opacity: .7
+                    transition: .2s linear
+
+                &:hover
+                    &::before
+                        opacity: @lg 1

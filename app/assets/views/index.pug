@@ -1,0 +1,65 @@
+extends layouts/layout.pug
+
+block title
+    title Main | Elari
+
+block content
+    section.section
+        .section__head.section__head--main
+            h2.section__title Экосистема умных <br /> устройств для&nbsp;всей семьи.
+            .section__desc <span>Инновационные технологии</span> для&nbsp;комфорта и&nbsp;безопасности
+
+        include blocks/home-categories
+
+    section.section
+        .section__head
+            h2.section__title Приложения <br /> для умных устройств ELARI.
+
+        include blocks/home-apps
+
+    section.section
+        include blocks/home-watch
+
+    section.section.section--margin-big
+        .section__unit
+            h2 Мы создаем <br /> технологии для&nbsp;жизни.
+            p 
+                | Мы разрабатываем и&nbsp;производим <span>умные устройства и программное обеспечение</span>, которые уже сегодня делают жизнь удобнее и&nbsp;безопаснее. 
+                <br />
+                <br />
+                | Наши продукты созданы для&nbsp;всей семьи: <span>от&nbsp;детских часов</span> с&nbsp;GPS <span>до&nbsp;<nobr>фитнес-трекеров</nobr></span> для&nbsp;взрослых. Мы гордимся тем, что&nbsp;сами разрабатываем софт и&nbsp;устройства, чтобы&nbsp;обеспечить их&nbsp;надежность и&nbsp;качество.
+
+    section.section
+        .section__head
+            h2.section__title Выберите устройства <br /> подходящие для вас.
+
+        include blocks/home-catalog
+
+    section.section
+        .section__head
+            h2.section__title Почему выбирают ELARI?
+
+        include blocks/home-benefits
+
+    section.section
+        .section__head.text-center
+            h2.section__title Безопасность и&nbsp;контроль <br /> детских устройств
+            .section__desc С&nbsp;приложениями ELARI SafeFamily и&nbsp;KidGram <br /> вы&nbsp;можете быть спокойны за&nbsp;своих детей
+
+        include blocks/home-diagram
+
+    section.section.section--bg-gray
+        .section__head.text-center
+            h2.section__title Помощь и поддержка
+
+        include blocks/home-faq
+
+        .sub-offer
+            .sub-offer__title Узнавайте первым <span>о&nbsp;новинках</span> и&nbsp;новостях 
+
+            form.form.sub-offer__form
+                input.sub-offer__input(type="text" name="email" placeholder="Ваш email")
+                button.btn.btn--reset.sub-offer__submit(type="submit" aria-label="Send form" disabled)
+            
+
+

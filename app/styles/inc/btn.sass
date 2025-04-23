@@ -1,0 +1,66 @@
+.btn
+	font-family: var(--font-family)
+	color: #1d1d1f
+	text: 500 16px
+	white-space: nowrap
+	line-height: unset
+	position: relative
+	text-decoration: none
+	background: transparent
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	padding: 0 24px
+	transition: .2s linear
+	border-radius: 60px
+	min-height: 40px
+	cursor: pointer
+	user-select: none
+	background: #fff
+	border: 1px solid #1d1d1f
+
+	&--reset
+		margin: 0
+		padding: 0
+		outline: 0
+		border: 0
+		border-radius: 0
+		background-color: transparent
+		cursor: pointer
+
+	&--border-accent 
+		color: #7373f5
+		background: transparent
+		border-color: #7373f5
+
+		&:hover
+			color: @lg #fff
+			background: @lg #7373f5
+			border-color: @lg #7373f5
+
+	&--search,
+	&--cart,
+	&--burger
+		&:before
+			content: ''
+			size: 24px
+			min-width: 24px
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+
+	&--search
+		&::before
+			background-image: resolve("icons/search.svg")
+
+	&--cart
+		&::before
+			background-image: resolve("icons/cart.svg")
+
+	&--burger
+		&::before
+			background-image: resolve("icons/burger.svg")
+
+	&--cross
+		&::before
+			background-image: resolve("icons/cross.svg")

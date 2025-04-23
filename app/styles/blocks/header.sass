@@ -1,0 +1,157 @@
+.header
+    position: sticky
+    top: 0
+    background: #fff
+    padding: 8px 0 @lg 20px 0 @xl 28px 0
+    z-index: 97
+
+    &__container
+        padding: @md 0 24px @xl 0 40px
+
+    &__row
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    &__logo
+        display: block
+        min-width: 60px @xl 84px
+        max-width: 60px @xl 84px
+        opacity: .7
+
+        &:hover
+            opacity: @lg 1
+
+    &__nav
+        position: @lg-down fixed
+        top: @lg-down 0
+        padding: @lg-down 64px 32px
+        background: @lg-down #fff
+        width: @lg-down 100%
+        height: @lg-down 100%
+        left: @lg-down 0
+        display: @lg-down none
+
+        &-list
+            list-style: none
+            padding: 0
+            margin: 0
+
+            display: @lg flex
+            align-items: @lg center
+
+        &-item
+            margin-left: @lg 56px
+            margin-bottom: 24px @lg 0
+
+            &:first-child
+                margin-left: @lg 0
+
+            &:last-child
+                display: @lg none
+                margin-bottom: 0
+
+            &:nth-last-child(-n + 3)
+                ^^&-link
+                    color: @lg-down #838389
+                    text: @lg-down 20px
+
+            &:nth-last-child(3)
+                margin-top: @lg-down 56px
+
+        &-link
+            color: #1d1d1f @lg rgba(29, 29, 31, .7)
+            text: 600 28px 1.1 @lg 500 12px @xl 16px
+            letter-spacing: @lg-down -0.01em
+            white-space: nowrap
+
+            &:hover
+                color: @lg #1d1d1f
+
+    &__panel
+        display: flex
+        align-items: center
+
+        & > *
+            margin-left: 16px @lg 56px
+
+            &:first-child
+                margin: 0
+
+    .header__btn-lk
+        min-width: 24px @lg 16px @xl 24px
+        max-width: 24px @lg 16px @xl 24px
+        height: 24px @lg 16px @xl 24px
+
+        img
+            min-width: 16px @xl 24px
+            max-width: 16px @xl 24px
+
+    &__btn-cart,
+    &__btn-search,
+    &__btn-lk
+        position: static
+        min-width: 24px @lg 16px @xl 24px
+        max-width: 24px @lg 16px @xl 24px
+        height: 24px @lg 16px @xl 24px
+        opacity: @lg .7
+
+        &:hover
+            opacity: @lg 1
+
+        &:before
+            size: 16px @xl 24px
+            min-width: 16px @xl 24px
+
+    &__burger
+        display: @lg none
+
+    &__search
+        position: fixed @lg absolute
+        top: 0 @lg 100%
+        left: 0
+        width: 100%
+        background: #fff
+        height: 100% @lg auto
+        display: none
+
+.header-mobile-menu
+    .header__nav
+        display: @lg-down block
+        animation: @lg-down fadeIn .4s forwards
+
+.header-search-show
+    .header__search
+        display: block
+        animation: fadeIn .4s forwards
+
+    .header__panel
+        & > *
+            display: @lg-down none
+
+        .header__btn-search
+            position: @lg-down relative
+            display: @lg-down inline-flex
+            z-index: @lg-down 1
+
+    .header__btn-search
+        &:before
+            background-image: @lg-down resolve("icons/cross.svg")
+            size: @lg-down 24px
+            min-width: @lg-down 24px
+
+@media (min-width: 1024px) and (max-width: 1400px)
+    body
+        .header
+            &__nav
+                &-item
+                    margin-left: 36px   
+
+            &__panel
+                & > *
+                    margin-left: 36px
+
+
+
+
+            

@@ -1,0 +1,40 @@
+header.header
+    .container.header__container
+        .header__row
+            a.header__logo(href="#")
+                img.header__logo-img(src="img/icons/logo.svg" width="83" height="22" alt="Elari")
+
+            nav.header__nav
+                ul.header__nav-list
+                    each category, i in nav
+                        li.header__nav-item
+                            a.header__nav-link(href="#")= category.name
+
+            .header__panel
+                button.btn.btn--reset.btn--search.header__btn-search(aria-label="Toggle search panel")
+                a.btn.btn--reset.btn--cart.header__btn-cart(href="#basket")
+                a.btn.btn--reset.header__btn-lk(href="#lk")
+                    img(src="img/icons/user.svg" width="24" height="24" alt="User")
+
+                button.btn.btn--reset.btn--burger.header__burger(aria-label="Toggle search panel")
+
+            .header__search.search
+                .search__container
+                    form.search__form(action="/.php" method="GET")
+                        button.btn.btn--reset.btn--search.search__form-submit(type="submit" aria-label="Send form")
+                        input.search__form-input(type="text" name="search" placeholder="Поиск по сайту")
+
+                    .search__output
+                        .search__output-title Найдено
+
+                        ul
+                            li
+                                a(href="#category") Детские часы
+
+                            li
+                                a(href="#category") Фитнес-часы
+
+                    
+
+
+            

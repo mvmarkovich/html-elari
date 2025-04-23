@@ -1,0 +1,61 @@
+.sub-offer
+    margin-top: 40px @md 120px @xl 172px
+    max-width: 560px @xl 786px
+    margin: * auto
+    border-radius: @md 24px @xl 34px
+    background: @md #fff
+    padding: 0 16px @md 48px 56px 80px @xl 64px 112px 80px
+
+    &__title
+        color: #838389
+        text: 600 20px 1 @md 28px @xl 40px
+        text-align: center
+        max-width: 260px @md 400px @xl 480px
+        margin: 0 auto
+
+        span 
+            color: #1d1d1f
+
+    &__form
+        position: relative
+        margin-top: 16px @md 32px @xl 48px
+
+    &__input
+        position: relative
+        font-family: var(--font-family)
+        color: #1d1d1f
+        text: 500 14px 1 @xl 20px
+        background: #fff
+        border: none
+        border-radius: 48px @xl 67px
+        min-height: 40px @md 56px @xl 80px
+        padding: 0 40px 0 16px @md 0 56px 0 24px @xl 0 72px 0 32px
+        width: 100%
+        outline: none
+        transition: .2s
+        resize: none
+
+        box-shadow: @md inset 0 0 14px 0 rgba(36, 42, 93, 0.1)
+
+    &__submit
+        position: absolute
+        right: 4px @md 12px @xl 16px
+        top: 50%
+        transform: translateY(-50%)
+        size: 32px @xl 44px
+        border-radius: 50%
+        background: rgba(0, 0, 0, .25)
+        z-index: 2
+
+        &:before
+            content: ''
+            size: 18px @xl 24px
+            min-width: 18px @xl 24px
+            background: resolve("icons/arrow-right-light.svg") no-repeat center / contain
+
+        &:disabled
+            pointer-events: none
+            background: rgba(0, 0, 0, .1)
+
+        &:hover
+            background: @lg #7373f5

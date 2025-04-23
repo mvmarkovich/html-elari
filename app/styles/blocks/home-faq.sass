@@ -1,0 +1,72 @@
+.home-faq
+    &__slider
+        position: relative
+        width: 100vw
+        left: 50%
+        padding: 0 16px @md 0 48px @lg 0 64px
+        transform: translateX(-50%)
+        overflow: hidden
+        max-width: 1920px
+
+        .swiper-wrapper 
+            display: @md-down block
+
+    &__card 
+        width: 100%
+        min-width: @md 264px @xl 370px
+        max-width: @md 264px @xl 370px
+        padding: @md-down 8px 0
+        border-bottom: @md-down 1px solid rgba(29, 29, 31, 0.2)
+
+    &__body
+        display: flex @md block
+        align-items: center
+        justify-content: space-between
+        background: @md #fff
+        padding: @md 24px @xl 32px
+        border-radius: @md 24px @xl 34px
+        min-height: @md 200px @xl 280px
+
+        &:hover
+            ^^&__btn
+                background: @lg #7373f5
+
+        &:after
+            content: ''
+            size: 18px
+            min-width: 18px
+            background: resolve("icons/arrow-right.svg") no-repeat center / contain
+            transform: rotate(-45deg)
+            margin-left: 16px
+            display: @md none
+
+    &__icon
+        &--wrap
+            min-width: 32px @xl 44px
+            max-width: 32px @xl 44px
+            margin-bottom: 16px @xl 24px
+
+            display: @md-down none
+
+    &__title
+        color: #1d1d1f
+        text: 500 14px 1 @md 600 20px @xl 28px
+        letter-spacing: @md -0.01em
+        max-width: @md 240px
+
+    &__btn
+        position: absolute
+        right: 12px @xl 16px
+        bottom: 12px @xl 16px
+        size: 32px @xl 44px
+        background: rgba(0, 0, 0, .25)
+        border-radius: 50%
+
+        display: @md-down none
+
+        &:before
+            content: ''
+            size: 18px @xl 24px
+            min-width: 18px @xl 24px
+            background: resolve("icons/arrow-right-light.svg") no-repeat center / contain
+            transform: rotate(-45deg)

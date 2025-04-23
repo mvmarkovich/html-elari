@@ -1,0 +1,77 @@
+.home-apps
+    &__slider
+        position: relative
+        width: 100vw
+        left: 50%
+        padding: 0 16px @md 0 48px @lg 0 64px
+        transform: translateX(-50%)
+        overflow: hidden
+        max-width: 1920px
+
+    &__card
+        min-width: 220px @md 264px @xl 370px
+        max-width: 220px @md 264px @xl 370px
+
+    &__body
+        position: relative
+        z-index: 1
+        display: block
+        background: #f2f2ff
+        padding: 20px
+        border-radius: 24px @xl 34px
+        min-height: 420px @xl 590px
+        overflow: hidden
+
+        &:hover
+            ^^&__btn
+                background: @lg #7373f5
+
+    &__img
+        &--wrap
+            min-width: 80px @xl 112px
+            max-width: 80px @xl 112px
+            height: 80px @xl 112px
+            margin-bottom: 32px @xl 48px
+
+    &__bg
+        position: absolute
+        top: 0
+        left: 0
+        size: 100%
+        z-index: -1
+
+    &__name
+        color: #000
+        text: 600 28px 1 @md 20px @xl 28px
+        letter-spacing: -0.01em
+
+    &__text
+        color: #838389
+        text: 14px 1 @md 600 12px @xl 20px
+        margin-top: 8px @xl 16px
+
+    &__btn
+        position: absolute
+        right: 12px @xl 16px
+        bottom: 12px @xl 16px
+        size: 44px
+        background: rgba(255, 255, 255, .25)
+        border-radius: 50%
+
+        &:before
+            content: ''
+            size: 18px @xl 24px
+            min-width: 18px @xl 24px
+            background: resolve("icons/arrow-right-light.svg") no-repeat center / contain
+            transform: rotate(-45deg)
+
+    &__slider-nav
+        position: absolute
+        bottom: -24px @md -30px @xl -72px
+        right: 0
+
+        .slider-arrow
+            display: @xl-down none
+
+    .slider-pagination
+        display: @xl none

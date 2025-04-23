@@ -1,0 +1,22 @@
+.home-apps
+    .home-apps__slider
+        .swiper-wrapper
+            each category, i in apps
+                .home-apps__card.swiper-slide
+                    a.home-apps__body(href="#" target="_blank")
+                        .home-apps__img--wrap
+                            img.home-apps__img(src="img/content/home-apps/app_" + i + ".png" width="80" height="80" alt="Name app")
+
+                        img.home-apps__bg(src="img/bg/apps-card-" + i + ".png")
+
+                        .home-apps__info
+                            .home-apps__name= category.name
+                            .home-apps__text= category.text
+
+                        .btn.btn--reset.home-apps__btn
+
+    .slider-nav.home-apps__slider-nav
+        button.btn.btn--reset.slider-arrow.slider-arrow-prev(aria-label="Prev slide")
+        button.btn.btn--reset.slider-arrow.slider-arrow-next(aria-label="Next slide")
+
+        .slider-pagination

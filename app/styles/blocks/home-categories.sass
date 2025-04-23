@@ -1,0 +1,135 @@
+.home-categories
+    margin: * -16px @md * -32px @xl * -48px
+
+    &__row
+        display: flex
+        flex-wrap: wrap
+        margin: * * -12px @md * -6px -12px @xl * -8px -16px
+
+    .hero-category
+        width: 100% @md 50%
+
+.hero-category
+    padding: @md 0 6px @xl 0 8px
+    margin-bottom: 12px @xl 16px
+    overflow: hidden
+
+    &__body
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        text-align: center
+        padding: 32px 16px 24px @sm 48px 20px 28px @xl 64px 32px 40px
+        min-height: 420px @sm 500px @xl 700px
+
+    &__name
+        text: 600 28px 1 @xl 40px
+
+    &__desc
+        text: 500 14px 1.1 @xl 20px
+        margin-top: 8px
+        max-width: 220px @xl 300px
+
+    &__nav
+        margin-top: 16px @xl 24px
+
+    &__name,
+    &__desc,
+    &__nav
+        position: relative
+        z-index: 2
+
+    &__btn
+        text: 12px @xl 16px
+        min-height: 28px @xl 40px
+        padding: 0 8px 0 12px @xl 0 16px 0 24px
+
+        &::after
+            content: ''
+            size: 24px
+            min-width: 24px
+            background-image: resolve("icons/chevron-right-accent.svg") 
+            background-repeat: no-repeat 
+            background-position: center 
+            background-size: 14px @xl 18px
+            margin-left: 4px @xl 8px
+            transition: .2s
+
+        &:hover
+            &:after
+                filter: @lg brightness(0) invert(1)
+
+    &__img
+        &--wrap
+            margin-top: 20px @sm 40px
+            flex: 1
+            display: flex
+            align-items: center
+            max-width: 280px @sm 324px @xl 100%
+            max-height: 272px @xl 400px
+
+    &__bg
+        size: 100%
+        object-fit: cover
+
+        &--wrap
+            position: absolute 0 null null 0
+            size: 100%
+
+    &__label
+        text: 600 16px
+        margin-top: 16px @sm 24px
+        display: inline-flex
+        align-items: center
+
+        &-sticker
+            color: #5d82ea
+            display: inline-flex
+            align-items: center
+            margin-left: 6px
+
+            img
+                margin-right: 6px
+
+    &.-wide-
+        width: @md 100%
+
+        ^&__body
+            min-height: @sm 540px @xl 760px
+            padding-top: @sm 64px @xl 90px
+
+        ^&__name
+            text: @sm 40px @xl 56px
+
+        ^&__desc
+            text: @sm 18px @xl 24px
+            margin-top: @sm 8px @xl 12px
+            max-width: 300px @sm 340px @xl 460px
+
+        ^&__nav
+            margin-top: 32px
+
+    &.-strange-
+        ^&__img
+            filter: drop-shadow(0 0 40px rgba(54, 161, 255, 0.5)) @xl drop-shadow(0 0 124px rgba(54, 161, 255, 0.5))
+
+            &--wrap
+                position: relative
+                transform: translateX(-6vw)
+                max-width: 100%
+                max-height: 100%
+
+                &::before
+                    content: ''
+                    size: 85% 100%
+                    position: absolute
+                    top: 0
+                    left: 15%
+                    background: rgba(54, 161, 255, 0.5)
+                    z-index: -1
+                    display: none
+
+        ^&__nav
+            margin-top: 40px @xl 56px

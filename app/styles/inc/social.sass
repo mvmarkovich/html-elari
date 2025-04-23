@@ -1,0 +1,30 @@
+.social
+	display: flex
+	align-items: center
+
+	&__link
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		margin-right: 16px @xl 24px
+		transition: .2s linear
+		opacity: .7
+
+		&::before
+			content: ''
+			size: 32px @sm 24px @xl 32px
+			min-width: 32px @sm 24px @xl 32px
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+
+		&--tg
+			&::before
+				background-image: resolve("icons/social/tg.svg")
+
+		&--vk
+			&::before
+				background-image: resolve("icons/social/vk.svg")
+
+		&:hover
+			opacity: 1

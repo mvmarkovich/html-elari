@@ -1,0 +1,140 @@
+.footer
+    background: #f5f5f7
+    padding: 16px 0 @sm 0
+    transition: @lg .4s, opacity .4s, -webkit-transform .4s
+
+    &__main
+        display: @sm flex
+        justify-content: @sm space-between
+        padding: @sm 40px 0 20px @xl 56px 0 40px
+
+    &__col
+        display: none @sm flex
+        flex-direction: @sm column
+        justify-content: @sm space-between
+
+    &__logo
+        display: block
+        min-width: 120px @xl 170px
+        max-width: 120px @xl 170px
+        margin-bottom: 24px
+
+        img
+            width: 100%
+
+    &__phone
+        color: rgba(29, 29, 31, .7)
+        text: 15px @xl 21px
+
+        &:hover
+            color: @lg #1d1d1f
+
+    &__menu
+        display: @sm flex
+
+    &__nav
+        display: @sm flex
+        flex-direction: @sm column
+        justify-content: @sm space-between
+        margin-right: @sm 120px @xl 164px
+        margin-bottom: 52px @sm 0
+
+        &--another
+            ul
+                li
+                    a
+                        text: @sm-down 500
+
+        &:last-child
+            margin: 0
+
+        ul
+            list-style: none
+            padding: 0
+            margin: 0
+
+            li
+                display: flex
+                margin-bottom: @sm 12px @xl 16px
+                border-bottom: 1px solid rgba(29, 29, 31, 0.2) @sm none
+
+                &:last-child
+                    margin: 0
+                    border-bottom: none
+
+                a
+                    color: #1d1d1f @sm rgba(29, 29, 31, .7)
+                    text-decoration: none
+                    text: 600 16px 1.1 @sm 500 12px @xl 16px
+                    display: inline-flex
+                    align-items: center
+                    min-height: 48px @sm 1px
+
+                    &:hover
+                        color: @lg #1d1d1f
+
+    &__panel
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 52px @sm 16px
+
+        ^&__phone
+            display: @sm none
+
+    &__copy
+        position: relative
+        padding: @sm 20px 0 @xl 24px 0
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        gap: 4px 12px @md 16px 28px @xl 20px 36px
+        margin-top: 20px @sm 0
+
+        p:not([class])
+            color: #1d1d1f
+            text: 400 10px 1.1 @xl 14px
+            width: 100% @md auto
+
+            &::after
+                display: @md-down none
+
+        a:not([class])
+            color: #1d1d1f
+            text: 400 10px 1.1 @xl 14px
+            text-decoration-color: transparent
+            text-decoration-thickness: 1px
+            text-underline-offset: 4px
+
+            &:hover
+                color: @lg #1b242e
+                text-decoration-color: @lg #1b242e
+
+        & > *
+            position: relative
+            margin: 0
+
+            &:after
+                content: ''
+                width: 1px 
+                height: 100%
+                background: #1d1d1f
+                position: absolute
+                right: -6px @md -14px @xl -18px
+                top: 50%
+                transform: translateY(-50%)
+
+            &:last-child
+                &::after
+                    display: none
+
+        &::before
+            content: ''
+            background: #dee0e4
+            width: calc(100vw - 48px)
+            height: 1px
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            display: @sm-down none

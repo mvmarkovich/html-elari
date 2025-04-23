@@ -1,0 +1,30 @@
+.tag
+    display: inline-flex
+    align-items: center
+    min-height: 32px
+    padding: 0 12px
+    color: #1b242e
+    text: 400 13px
+    background: #fff
+    border: 1px solid rgba(27, 36, 46, 0.1)
+    border-radius: 30px
+
+    &__row
+        display: flex
+        flex-wrap: wrap
+
+        .tag
+            margin: 0 8px 8px 0
+
+    a&
+        &:focus-visible
+            outline: 2px solid #1b242e
+            outline-offset: 0
+
+        &:hover
+            color: @lg #1b242e
+            border-color: @lg #1b242e
+
+        &:active
+            color: #1b242e
+            border-color: #1b242e

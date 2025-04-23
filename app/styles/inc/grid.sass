@@ -1,0 +1,16 @@
+.container
+	margin: * auto
+	padding: 0 16px @md 0 48px @xl 0 64px
+	width: 100%
+	max-width: 1920px
+
+.page-container
+	flex: 1 1 auto
+	transition: @lg .4s, opacity .4s, -webkit-transform .4s
+
+.container--move, .container--move + .footer
+	-webkit-filter: @lg blur(8px)
+	filter: @lg blur(8px)
+	pointer-events: @lg none
+
+

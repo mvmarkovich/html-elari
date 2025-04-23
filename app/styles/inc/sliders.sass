@@ -1,0 +1,48 @@
+.slider-nav
+    display: flex
+    align-items: center
+
+.slider-arrow
+    size: 32px @xl 40px
+    min-width: 32px @xl 40px
+    display: inline-flex
+    border-radius: 50%
+
+    background-color: rgba(0, 0, 0, .25)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 18px @xl 24px
+    transition: .2s linear
+
+    &-prev
+        background-image: resolve("icons/chevron-left-light.svg")
+
+    &-next
+        background-image: resolve("icons/chevron-right-light.svg")
+        margin-left: 12px @xl 16px
+
+    &:hover
+        background-color: @lg #7373F5
+
+    &.swiper-button-disabled
+        pointer-events: none
+        background-color: rgba(0, 0, 0, .1)
+
+.slider-pagination
+    &.swiper-pagination-horizontal
+        display: flex
+        align-items: center
+        gap: 8px
+        width: auto
+
+        .swiper-pagination-bullet
+            size: 6px
+            min-width: 6px
+            border: none
+            margin: 0
+            background: #dfdfdf
+            transition: .4s
+            opacity: 1
+
+        .swiper-pagination-bullet-active
+            background: #a1a1a1

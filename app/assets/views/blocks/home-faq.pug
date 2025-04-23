@@ -1,0 +1,12 @@
+.home-faq
+    .home-faq__slider
+        .swiper-wrapper
+            each category, i in faq
+                .home-faq__card.swiper-slide
+                    a.home-faq__body(href="#faq")
+                        .home-faq__icon--wrap
+                            img.home-faq__icon(src="img/content/home-faq/item_" + i + ".svg" width="44" height="44" alt="Name card")
+
+                        .home-faq__title!= category.name
+
+                        .btn.btn--reset.home-faq__btn

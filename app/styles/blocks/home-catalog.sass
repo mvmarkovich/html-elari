@@ -1,0 +1,150 @@
+.home-catalog
+    &__row
+        display: flex
+        flex-wrap: wrap
+        margin: * -6px -24px @md * -12px -48px @xl * -16px -64px
+
+    .category
+        width: 100% @md 50%
+        padding: 0 6px @md 0 12px @xl 0 16px
+        margin-top: 16px @md 0
+        margin-bottom: 12px @md 48px @xl 64px
+        
+        &__body
+            min-height: 200px @md 312px @xl 444px
+
+        &:first-child
+            margin-top: @md-down 0
+
+    .product
+        width: 50% @md 25%
+        padding: 0 6px @md 0 12px @xl 0 16px
+        margin-bottom: 24px @md 48px @xl 64px
+        
+        &__body
+            min-height: 210px @md 312px @xl 444px
+
+.category
+    &__body
+        display: flex
+        align-items: flex-end
+        position: relative
+        z-index: 1
+        border-radius: 12px @md 24px @xl 34px
+        overflow: hidden
+        padding: 8px 12px @md 12px 12px 12px 24px @xl 20px 20px 20px 32px
+
+        &:before
+            content: ''
+            width: 100%
+            height: 36%
+            background: linear-gradient(180deg, rgba(33, 33, 33, 0) 0%, rgba(33, 33, 33, 0.5) 100%)
+            position: absolute
+            bottom: 0
+            left: 0
+            z-index: -1
+
+        &:hover
+            ^^&__btn
+                background: @lg #7373f5
+
+    &__img
+        position: absolute
+        top: 0
+        left: 0
+        size: 100%
+        object-fit: cover
+        z-index: -2
+
+    &__content
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    &__title
+        color: #fff
+        text: 600 16px 1.1 @xl 22px
+        letter-spacing: -0.01em
+
+    &__btn
+        size: 24px @md 32px @xl 44px
+        background: @md rgba(0, 0, 0, .25)
+        border-radius: 50%
+
+        &:before
+            content: ''
+            size: 24px @md 18px @xl 24px
+            min-width: 24px @md 18px @xl 24px
+            background: resolve("icons/arrow-right-light.svg") no-repeat center / contain
+
+.product
+    &__body
+        position: relative
+        display: flex
+        flex-direction: column
+        height: 100%
+        overflow: hidden
+
+    &__link
+        position: absolute 0
+        z-index: 1
+
+        &:hover
+            & ~ .product__info .product__title
+                color: @lg #7373f5
+
+    &__img
+        mix-blend-mode: darken
+        max-height: 120px @md 160px @xl 220px
+
+        &--wrap
+            position: relative
+            flex: 1
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            background: #f0eef7
+            border-radius: 12px @md 24px @xl 34px
+            padding: 12px
+
+    &__colors
+        &-list
+            list-style: none
+            padding: 0
+            margin: 8px 0 0 @md 0
+            position: @md absolute
+            bottom: @md 24px @xl 32px
+            left: @md 50%
+            transform: @md translateX(-50%)
+            display: flex
+            align-items: center
+            z-index: 3
+
+        &-item
+            border-radius: 50%
+            size: 12px @xl 16px
+            margin-right: 12px @xl 16px
+
+            &:last-child
+                margin: 0
+
+    &__info
+        margin-top: 12px @xl 16px
+        padding: 0 8px @xl 0 12px
+        
+    &__title
+        color: #1d1d1f
+        text: 600 14px @xl 20px
+        transition: .2s
+
+    &__price
+        margin-top: 8px @xl 12px
+        
+        .price__current
+            text: 14px @xl 20px
+
+.price
+    &__current
+        color: #838389
