@@ -44,4 +44,7 @@ html(lang="ru" dir="ltr")
 		script(src="libs/swiper/swiper-bundle.min.js")
 		script(src="scripts/main.js")
 
+		script.
+			if (CSS && 'paintWorklet' in CSS) CSS.paintWorklet.addModule('scripts/paint.js');
+
 		block scripts

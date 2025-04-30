@@ -32,9 +32,9 @@ function stickyHeader() {
 headerBurger.addEventListener("click", toggleMobileMenu);
 headerSearchBtn.addEventListener("click", toggleHeaderSearch);
 
-document.addEventListener("click", function(e) {
+document.addEventListener("click", function (e) {
     if (!header.contains(e.target) && header.classList.contains('header-search-show')) {
-        toggleHeaderSearch(); 
+        toggleHeaderSearch();
     }
 })
 
@@ -51,15 +51,15 @@ let sliderApps = new Swiper('.home-apps__slider', {
     arrows: false,
 
     navigation: {
-		prevEl: ".home-apps .slider-arrow-prev",
-		nextEl: ".home-apps .slider-arrow-next"
-	},
+        prevEl: ".home-apps .slider-arrow-prev",
+        nextEl: ".home-apps .slider-arrow-next"
+    },
 
     pagination: {
-		el: '.home-apps .slider-pagination',
-		type: 'bullets',
-		clickable: false
-	},
+        el: '.home-apps .slider-pagination',
+        type: 'bullets',
+        clickable: false
+    },
 
     breakpoints: {
         '768': {
@@ -73,25 +73,6 @@ let sliderApps = new Swiper('.home-apps__slider', {
     },
 });
 
-let sliderWatch = new Swiper('.home-watch__slider', {
-    loop: true,
-    slidesPerView: 'auto',
-    arrows: true,
-    centeredSlides: true,
-
-    breakpoints: {
-        '768': {
-            slidesPerView: 'auto',
-            centeredSlides: false,
-        },
-    },
-
-    navigation: {
-		prevEl: ".home-watch .slider-arrow-prev",
-		nextEl: ".home-watch .slider-arrow-next"
-	}
-});
-
 let sliderBenefits = new Swiper('.home-benefits__slider', {
     loop: false,
     slidesPerView: 'auto',
@@ -99,15 +80,15 @@ let sliderBenefits = new Swiper('.home-benefits__slider', {
     arrows: false,
 
     navigation: {
-		prevEl: ".home-benefits .slider-arrow-prev",
-		nextEl: ".home-benefits .slider-arrow-next"
-	},
+        prevEl: ".home-benefits .slider-arrow-prev",
+        nextEl: ".home-benefits .slider-arrow-next"
+    },
 
     pagination: {
-		el: '.home-benefits .slider-pagination',
-		type: 'bullets',
-		clickable: false
-	},
+        el: '.home-benefits .slider-pagination',
+        type: 'bullets',
+        clickable: false
+    },
 
     breakpoints: {
         '768': {
@@ -149,7 +130,7 @@ else {
 document.addEventListener("DOMContentLoaded", () => {
     let textBlur = document.querySelectorAll('.text-blur');
 
-    textBlur.forEach(function(text) {
+    textBlur.forEach(function (text) {
         text.addEventListener('click', () => text.classList.toggle('active'))
     })
 });

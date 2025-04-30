@@ -25,6 +25,14 @@
             min-height: 210px @md 312px @xl 444px
 
 .category
+    &__link
+        position: absolute 0
+        z-index: 1
+
+        &:hover
+            & ~ .category__content .category__btn
+                background: @lg #7373f5
+
     &__body
         display: flex
         align-items: flex-end
@@ -33,6 +41,9 @@
         border-radius: 12px @md 24px @xl 34px
         overflow: hidden
         padding: 8px 12px @md 12px 12px 12px 24px @xl 20px 20px 20px 32px
+        --smooth-corners: 30
+        mask-image: paint(smooth-corners)
+        -webkit-mask-image: paint(smooth-corners)
 
         &:before
             content: ''
@@ -43,10 +54,6 @@
             bottom: 0
             left: 0
             z-index: -1
-
-        &:hover
-            ^^&__btn
-                background: @lg #7373f5
 
     &__img
         position: absolute
@@ -108,6 +115,9 @@
             background: #f0eef7
             border-radius: 12px @md 24px @xl 34px
             padding: 12px
+            --smooth-corners: 15
+            mask-image: paint(smooth-corners)
+            -webkit-mask-image: paint(smooth-corners)
 
     &__colors
         &-list
