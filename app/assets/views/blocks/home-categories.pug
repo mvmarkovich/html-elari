@@ -1,7 +1,7 @@
 .home-categories
     .home-categories__row
         .hero-category
-            .hero-category__body(style="background: linear-gradient(360deg, #f7f7fa 0%, #a4c7ff 100%);")
+            .hero-category__body
                 .hero-category__name Детские часы
                 .hero-category__desc Гаджеты, делающие детство умнее и&nbsp;безопаснее.
 
@@ -9,7 +9,9 @@
                     a.btn.btn--border-accent.hero-category__btn(href="#") Подробнее
 
                 .hero-category__img--wrap
-                    img.hero-category__img(src="img/content/home-categories/img_0.png" width="528" height="328" alt="Name cateogory")
+                    picture
+                        source(srcset="img/content/home-categories/img_0-desktop.png" media="(min-width: 768px)")
+                        img(src="img/content/home-categories/img_0-mobile.png" width="528" height="328" alt="Name cateogory")
 
                 .hero-category__label 
                     | Новая модель
@@ -19,7 +21,7 @@
                         | KidGram Watch
 
         .hero-category
-            .hero-category__body(style="background: linear-gradient(0deg, #f7f7fa 0%, #f2edff 100%);")
+            .hero-category__body
                 .hero-category__name Детские гаджеты
                 .hero-category__desc Безопасность и&nbsp;забота для&nbsp;вашего малыша.
 
@@ -27,21 +29,25 @@
                     a.btn.btn--border-accent.hero-category__btn(href="#") Подробнее
 
                 .hero-category__img--wrap
-                    img.hero-category__img(src="img/content/home-categories/img_1.png" width="528" height="328" alt="Name cateogory")
+                    picture
+                        source(srcset="img/content/home-categories/img_1-desktop.png" media="(min-width: 768px)")
+                        img(src="img/content/home-categories/img_1-mobile.png" width="528" height="328" alt="Name cateogory")
 
         .hero-category.-wide-
-            .hero-category__body(style="background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, #e5e2f4 100%);")
+            .hero-category__body
                 .hero-category__name Cмарт-часы
                 .hero-category__desc Технологии и&nbsp;стиль на&nbsp;вашем запястье.
 
                 .hero-category__nav
                     a.btn.btn--border-accent.hero-category__btn(href="#") Подробнее
 
-                .hero-category__bg--wrap
-                    img.hero-category__bg(src="img/content/home-categories/bg_0.png" width="528" height="328" alt="Name cateogory")
+                .hero-category__img--wrap
+                    picture
+                        source(srcset="img/content/home-categories/img_2-desktop.png" media="(min-width: 768px)")
+                        img(src="img/content/home-categories/img_2-mobile.png" width="528" height="328" alt="Name cateogory")
 
         .hero-category.-wide-.-strange-
-            .hero-category__body(style="background: linear-gradient(180deg, rgba(152, 223, 245, 0.2) 0%, rgba(152, 223, 245, 0.2) 100%);")
+            .hero-category__body
                 .hero-category__name Веллнес девайсы
                 .hero-category__desc Наши умные устройства позаботятся о&nbsp;вашем здоровье.
 
@@ -49,4 +55,7 @@
                     a.btn.btn--border-accent.hero-category__btn(href="#") Подробнее
 
                 .hero-category__img--wrap
-                    img.hero-category__img(src="img/content/home-categories/img_2.png" width="528" height="328" alt="Name cateogory")
+                    picture
+                        source(srcset="img/content/home-categories/img_3-desktop.png" media="(min-width: 768px)")
+                        img(src="img/content/home-categories/img_3-mobile.png" width="528" height="328" alt="Name cateogory")
+
