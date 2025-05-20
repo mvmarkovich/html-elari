@@ -1522,6 +1522,7 @@ a.tag:active {
   white-space: nowrap;
   background: #1d1d1f;
   margin-right: 12px;
+  margin-bottom: 4px;
   border-radius: 8px;
   padding: 0 8px;
 }
@@ -1613,8 +1614,10 @@ a.tag:active {
 
 .product__nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 12px 24px;
   margin-top: auto;
   padding-top: 12px;
 }
@@ -1636,6 +1639,16 @@ a.tag:active {
   background-size: 14px;
   margin-left: 4px;
   transition: .2s;
+}
+
+.product__preorder {
+  font-size: 14px;
+  min-height: 32px;
+  padding: 0 16px;
+  z-index: 3;
+}
+
+.product__preorder:hover {
 }
 
 .product__cart {
@@ -2678,6 +2691,12 @@ a.tag:active {
 
   .product__link:hover ~ .product__info .product__btn:after {
     filter: brightness(0) invert(1);
+  }
+
+  .product__preorder:hover {
+    color: #fff;
+    background: #1d1d1f;
+    border-color: #1d1d1f;
   }
 
   .product__cart:hover {

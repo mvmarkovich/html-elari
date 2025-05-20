@@ -134,3 +134,70 @@ document.addEventListener("DOMContentLoaded", () => {
         text.addEventListener('click', () => text.classList.toggle('active'))
     })
 });
+
+//
+// Modals
+//
+
+let modals = document.querySelectorAll(".modal");
+let modalButtons = document.querySelectorAll("[data-modal]");
+let closeButtons = document.querySelectorAll("[data-close-modal]");
+
+function openModal(modalId) {
+    let modal = document.getElementById(modalId);
+
+    if (modal.getAttribute('id') === 'modal-auth') {
+        authSlider.params.autoplay = { delay: 4000 };
+        authSlider.autoplay.start();
+    }
+
+    modal.style.display = "flex";
+    modal.classList.add('modal--open');
+    document.body.style.overflow = 'hidden';
+
+    setTimeout(function () {
+        modal.querySelector(".modal__square").style.transform = "translateY(0)";
+        modal.querySelector(".modal__square").style.opacity = "1";
+    }, 10);
+}
+
+function closeModal(modalId) {
+    let modal = document.getElementById(modalId);
+    modal.querySelector(".modal__square").style.transform = "translateY(20px)";
+    modal.querySelector(".modal__square").style.opacity = "0";
+    modal.classList.remove('modal--open');
+    document.body.style.overflow = '';
+
+    setTimeout(function () {
+        modal.style.display = "none";
+    }, 300);
+}
+
+modalButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+        let modalId = button.getAttribute("data-modal");
+        openModal(modalId);
+    });
+});
+
+closeButtons.forEach(function (button) {
+	button.addEventListener("click", function () {
+		let modalId = document.querySelector('.modal--open').getAttribute('id');
+		closeModal(modalId);
+	});
+});
+
+document.addEventListener("click", function (event) {
+    const button = event.target.closest('.modal__close');
+    if (!button) return;
+
+    const modalId = document.querySelector('.modal--open').getAttribute('id');
+    closeModal(modalId);
+});
+
+window.addEventListener("click", function (event) {
+    if (event.target.classList.contains("modal")) {
+        let modalId = event.target.getAttribute("id");
+        closeModal(modalId);
+    }
+});
