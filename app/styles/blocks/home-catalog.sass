@@ -15,14 +15,7 @@
 
         &:first-child
             margin-top: @md-down 0
-
-    .product
-        width: 50% @md 25%
-        padding: 0 6px @md 0 12px @xl 0 16px
-        margin-bottom: 24px @md 48px @xl 64px
         
-        &__body
-            min-height: 210px @md 312px @xl 444px
 
 .category
     &__link
@@ -86,12 +79,17 @@
             background: resolve("icons/arrow-right-light.svg") no-repeat center / contain
 
 .product
+    width: 50% @md 25%
+    padding: 0 6px @md 0 12px @xl 0 16px
+    margin-bottom: 24px @md 48px @xl 64px
+            
     &__body
         position: relative
         display: flex
         flex-direction: column
         height: 100%
         overflow: hidden
+        min-height: 210px @md 312px @xl 444px
 
     &__link
         position: absolute 0
