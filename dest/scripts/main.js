@@ -117,10 +117,9 @@ let sliderFaq = new Swiper('.home-faq__slider', {
 });
 
 if (window.innerWidth >= 768) {
-    sliderFaq.init();
-}
-else {
-    sliderFaq.destroy(true, true)
+    if (document.querySelector('.home-faq__slider')) sliderFaq.init();
+} else {
+    if (document.querySelector('.home-faq__slider')) sliderFaq.destroy(true, true)
 }
 
 //
