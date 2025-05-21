@@ -1687,6 +1687,9 @@ a.tag:active {
 }
 
 .product__colors-item {
+  cursor: pointer;
+  outline: 2px solid transparent;
+  outline-offset: 4px;
   border-radius: 50%;
   width: 12px;
   height: 12px;
@@ -1694,6 +1697,10 @@ a.tag:active {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.product__colors-item--active {
+  outline-color: #7373f5;
 }
 
 .product__colors-item:last-child {
