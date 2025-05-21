@@ -377,7 +377,7 @@ b,strong {
 .btn--border-accent:hover {
 }
 
-.btn--burger:before,.btn--cart:before,.btn--search:before {
+.btn--burger:before,.btn--cart:before,.btn--cross:before,.btn--search:before {
   content: '';
   width: 24px;
   height: 24px;
@@ -951,6 +951,9 @@ a.tag:active {
 
 .modal__close {
   margin-left: 32px;
+}
+
+.modal__close:hover {
 }
 
 .modal__square {
@@ -2709,6 +2712,14 @@ a.tag:active {
   }
 
   .search__output ul a:hover::before {
+    opacity: 1;
+  }
+
+  .modal__close {
+    opacity: .7;
+  }
+
+  .modal__close:hover {
     opacity: 1;
   }
 
