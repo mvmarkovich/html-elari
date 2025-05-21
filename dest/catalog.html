@@ -76,7 +76,7 @@
       <div class="catalog">
         <div class="catalog__row">
           <div class="product">
-            <div class="product__body"><a class="product__link" href="#product" title="Go to product"></a>
+            <div class="product__body"><a class="product__link" href="p-card.html" title="Go to product"></a>
               <div class="product__labels">
                 <div class="product__labels-item -purple-">Новинка</div>
                 <div class="product__labels-item -green-">Хит продаж</div>
@@ -102,7 +102,7 @@
             </div>
           </div>
           <div class="product">
-            <div class="product__body"><a class="product__link" href="#product" title="Go to product"></a>
+            <div class="product__body"><a class="product__link" href="p-card.html" title="Go to product"></a>
               <div class="product__img--wrap" style="background: #F0EEF7"><img class="product__img" src="img/content/catalog/product_1.png" width="213" height="213" alt="Name product">
                 <ul class="product__colors-list">
                   <li class="product__colors-item" style="background-image: url('img/content/product-colors/yellow.jpg');"></li>
@@ -124,7 +124,7 @@
             </div>
           </div>
           <div class="product">
-            <div class="product__body"><a class="product__link" href="#product" title="Go to product"></a>
+            <div class="product__body"><a class="product__link" href="p-card.html" title="Go to product"></a>
               <div class="product__labels">
                 <div class="product__labels-item -purple-">Новинка</div>
               </div>
@@ -148,7 +148,7 @@
             </div>
           </div>
           <div class="product">
-            <div class="product__body"><a class="product__link" href="#product" title="Go to product"></a>
+            <div class="product__body"><a class="product__link" href="p-card.html" title="Go to product"></a>
               <div class="product__labels">
                 <div class="product__labels-item -purple-">Новинка</div>
                 <div class="product__labels-item -green-">Хит продаж</div>
@@ -173,7 +173,7 @@
             </div>
           </div>
           <div class="product">
-            <div class="product__body"><a class="product__link" href="#product" title="Go to product"></a>
+            <div class="product__body"><a class="product__link" href="p-card.html" title="Go to product"></a>
               <div class="product__labels">
                 <div class="product__labels-item -purple-">Новинка</div>
                 <div class="product__labels-item -blue-">Рекомендуем</div>
@@ -198,7 +198,7 @@
             </div>
           </div>
           <div class="product">
-            <div class="product__body"><a class="product__link" href="#product" title="Go to product"></a>
+            <div class="product__body"><a class="product__link" href="p-card.html" title="Go to product"></a>
               <div class="product__labels">
                 <div class="product__labels-item -purple-">Новинка</div>
               </div>
@@ -223,7 +223,7 @@
             </div>
           </div>
           <div class="product">
-            <div class="product__body"><a class="product__link" href="#product" title="Go to product"></a>
+            <div class="product__body"><a class="product__link" href="p-card.html" title="Go to product"></a>
               <div class="product__labels">
                 <div class="product__labels-item -purple-">Новинка</div>
                 <div class="product__labels-item -green-">Хит продаж</div>
@@ -240,7 +240,7 @@
             </div>
           </div>
           <div class="product">
-            <div class="product__body"><a class="product__link" href="#product" title="Go to product"></a>
+            <div class="product__body"><a class="product__link" href="p-card.html" title="Go to product"></a>
               <div class="product__img--wrap" style="background: #F0EEF7"><img class="product__img" src="img/content/catalog/product_7.png" width="213" height="213" alt="Name product">
                 <ul class="product__colors-list">
                   <li class="product__colors-item" style="background-image: url('img/content/product-colors/black.jpg');"></li>
@@ -262,7 +262,7 @@
             </div>
           </div>
           <div class="product">
-            <div class="product__body"><a class="product__link" href="#product" title="Go to product"></a>
+            <div class="product__body"><a class="product__link" href="p-card.html" title="Go to product"></a>
               <div class="product__img--wrap" style="background: #F0EEF7"><img class="product__img" src="img/content/catalog/product_8.webp" width="213" height="213" alt="Name product">
                 <ul class="product__colors-list">
                   <li class="product__colors-item" style="background-image: url('img/content/product-colors/pink-black.jpg');"></li>
@@ -316,6 +316,24 @@
         </div>
       </div>
     </footer>
+    <div class="modal" id="modal-preorder">
+      <div class="modal__square">
+        <div class="modal__head">
+          <div class="modal__title">Предзаказ на товар</div>
+          <button class="btn btn--reset btn--cross modal__close" data-close-modal></button>
+        </div>
+        <div class="modal__body">
+          <form class="form modal__form" action="/" method="POST">
+            <div class="input">
+              <input class="input__elem" type="text" name="email" placeholder="Укажите ваш email">
+            </div>
+            <div class="form__footer">
+              <button class="btn btn--border-accent form__send" aria-label="Add pre-order">Оформить предзаказ</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="libs/swiper/swiper-bundle.min.js"></script>
     <script src="scripts/main.js"></script>
     <script>

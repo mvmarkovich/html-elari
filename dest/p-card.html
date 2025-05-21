@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#fff">
+    <title>Catalog | Elari</title>
+    <link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="styles/app.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__row"><a class="header__logo" href="./"><img class="header__logo-img" src="img/icons/logo.svg" width="83" height="22" alt="Elari"></a>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Детские часы</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Детские телефоны</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Фитнес-часы</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Аксессуары</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Акции</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="support.html">Поддержка</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="delivery.html">Доставка</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__panel">
+            <button class="btn btn--reset btn--search header__btn-search" aria-label="Toggle search panel"></button><a class="btn btn--reset btn--cart header__btn-cart" href="#basket"></a><a class="btn btn--reset header__btn-lk" href="#lk"><img src="img/icons/user.svg" width="24" height="24" alt="User"></a>
+            <button class="btn btn--reset btn--burger header__burger" aria-label="Toggle search panel"></button>
+          </div>
+          <div class="header__search search">
+            <div class="search__container">
+              <form class="search__form" action="/.php" method="GET">
+                <button class="btn btn--reset btn--search search__form-submit" type="submit" aria-label="Send form"></button>
+                <input class="search__form-input" type="text" name="search" placeholder="Поиск по сайту">
+              </form>
+              <div class="search__output">
+                <div class="search__output-title">Найдено</div>
+                <ul>
+                  <li><a href="#category">Детские часы</a></li>
+                  <li><a href="#category">Фитнес-часы</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="breadcrumbs">
+      <div class="container breadcrumbs__container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="./">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Детские часы</a></li>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__link">KidGram Watch</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-container container">
+      <div class="p-card">
+        <div class="p-card__container">
+          <div class="p-card__media"></div>
+          <div class="p-card__main">
+            <div class="p-card__label">Детские часы</div>
+            <h1 class="p-card__title">KidGram Watch</h1>
+            <div class="price p-card__price">
+              <div class="price__current">7990</div>
+            </div>
+            <div class="p-card__colors">
+              <div class="p-card__colors-title">Цвет</div>
+              <ul class="product__colors-list">
+                <li class="product__colors-item" style="background-image: url('img/content/product-colors/black.jpg');"></li>
+                <li class="product__colors-item" style="background-image: url('img/content/product-colors/pink.jpg');"></li>
+                <li class="product__colors-item" style="background-image: url('img/content/product-colors/blue.jpg');"></li>
+              </ul>
+            </div>
+            <div class="p-card__nav">
+              <button class="btn btn--accent p-card__nav-btn" aria-label="Add cart">Добавить в корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__main">
+          <div class="footer__col"><a class="footer__logo" href="#"><img src="img/icons/logo.svg" width="170" height="45" alt="Elari"></a><a class="footer__phone" href="tel:+74990000000">+7 499 000 00 00</a></div>
+          <div class="footer__menu">
+            <div class="footer__nav">
+              <ul>
+                <li><a href="#">Детские часы</a></li>
+                <li><a href="#">Детские телефоны</a></li>
+                <li><a href="#">Фитнес-часы</a></li>
+                <li><a href="#">Аксессуары</a></li>
+                <li><a href="#">Акции</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav footer__nav--another">
+              <ul>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Поддержка</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+              </ul>
+              <div class="footer__panel"><a class="footer__phone" href="tel:+74990000000">+7 499 000 00 00</a>
+                <div class="social footer__social"><a class="social__link social__link--tg" href="#tg" target="_blank" title="Go to Telegram"></a><a class="social__link social__link--vk" href="#vk" target="_blank" title="Go to VK">   </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copy">
+          <p>Copyright © 2025 ELARI. Все права защищены.</p><a href="#">Политика конфиденциальности</a><a href="#">Публичный договор оферты</a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" id="modal-preorder">
+      <div class="modal__square">
+        <div class="modal__head">
+          <div class="modal__title">Предзаказ на товар</div>
+          <button class="btn btn--reset btn--cross modal__close" data-close-modal></button>
+        </div>
+        <div class="modal__body">
+          <form class="form modal__form" action="/" method="POST">
+            <div class="input">
+              <input class="input__elem" type="text" name="email" placeholder="Укажите ваш email">
+            </div>
+            <div class="form__footer">
+              <button class="btn btn--border-accent form__send" aria-label="Add pre-order">Оформить предзаказ</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+      if (CSS && 'paintWorklet' in CSS) CSS.paintWorklet.addModule('scripts/paint.js');
+      
+    </script>
+  </body>
+</html>

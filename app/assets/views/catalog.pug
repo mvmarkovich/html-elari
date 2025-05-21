@@ -4,7 +4,14 @@ block title
     title Catalog | Elari
 
 block breadcrumbs
-    include blocks/breadcrumbs
+    .breadcrumbs
+        .container.breadcrumbs__container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="./") Главная
+
+                li.breadcrumbs__item
+                    span.breadcrumbs__link Детские часы
 
 block content
     h1.page-title Детские часы
@@ -13,7 +20,7 @@ block content
         .catalog__row
             .product
                 .product__body
-                    a.product__link(href="#product" title="Go to product")
+                    a.product__link(href="p-card.html" title="Go to product")
 
                     .product__labels
                         .product__labels-item.-purple- Новинка
@@ -39,7 +46,7 @@ block content
 
             .product
                 .product__body
-                    a.product__link(href="#product" title="Go to product")
+                    a.product__link(href="p-card.html" title="Go to product")
 
                     .product__img--wrap(style="background: #F0EEF7")
                         img.product__img(src="img/content/catalog/product_1.png" width="213" height="213" alt="Name product")
@@ -61,7 +68,7 @@ block content
 
             .product
                 .product__body
-                    a.product__link(href="#product" title="Go to product")
+                    a.product__link(href="p-card.html" title="Go to product")
 
                     .product__labels
                         .product__labels-item.-purple- Новинка
@@ -85,7 +92,7 @@ block content
 
             .product
                 .product__body
-                    a.product__link(href="#product" title="Go to product")
+                    a.product__link(href="p-card.html" title="Go to product")
 
                     .product__labels
                         .product__labels-item.-purple- Новинка
@@ -110,7 +117,7 @@ block content
 
             .product
                 .product__body
-                    a.product__link(href="#product" title="Go to product")
+                    a.product__link(href="p-card.html" title="Go to product")
 
                     .product__labels
                         .product__labels-item.-purple- Новинка
@@ -135,7 +142,7 @@ block content
 
             .product
                 .product__body
-                    a.product__link(href="#product" title="Go to product")
+                    a.product__link(href="p-card.html" title="Go to product")
 
                     .product__labels
                         .product__labels-item.-purple- Новинка
@@ -160,7 +167,7 @@ block content
 
             .product
                 .product__body
-                    a.product__link(href="#product" title="Go to product")
+                    a.product__link(href="p-card.html" title="Go to product")
 
                     .product__labels
                         .product__labels-item.-purple- Новинка
@@ -179,7 +186,7 @@ block content
 
             .product
                 .product__body
-                    a.product__link(href="#product" title="Go to product")
+                    a.product__link(href="p-card.html" title="Go to product")
 
                     .product__img--wrap(style="background: #F0EEF7")
                         img.product__img(src="img/content/catalog/product_7.png" width="213" height="213" alt="Name product")
@@ -201,7 +208,7 @@ block content
 
             .product
                 .product__body
-                    a.product__link(href="#product" title="Go to product")
+                    a.product__link(href="p-card.html" title="Go to product")
 
                     .product__img--wrap(style="background: #F0EEF7")
                         img.product__img(src="img/content/catalog/product_8.webp" width="213" height="213" alt="Name product")

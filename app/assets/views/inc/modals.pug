@@ -1,9 +1,13 @@
 .modal#modal-preorder
     .modal__square
         .modal__head
-            .modal__caption Предзаказ на товар
+            .modal__title Предзаказ на товар
             button.btn.btn--reset.btn--cross.modal__close(data-close-modal)
 
-        .modal__actions
-            button.btn.btn--border-gray(data-close-modal aria-label="Close modal") Отмена
-            button.btn.btn--accent(aria-label="Delete address") Удалить
+        .modal__body
+            form.form.modal__form(action="/" method="POST")
+                .input
+                    input.input__elem(type="text" name="email" placeholder="Укажите ваш email")
+
+                .form__footer
+                    button.btn.btn--border-accent.form__send(aria-label="Add pre-order") Оформить предзаказ

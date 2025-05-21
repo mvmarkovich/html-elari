@@ -29,6 +29,9 @@
 			&:hover
 				color: rgba(27, 36, 46, 1)
 
+	&__send
+		width: 100%
+
 .input
 	margin-bottom: 12px
 	display: block
@@ -41,15 +44,14 @@
 		display: inline-block
 		margin: 0 0 6px
 
-	&__cell
+	&__elem
 		position: relative
-		font-family: var(--second-family)
-		color: #fff
-		text: 400 14px 1.4
-		background: rgba(229, 231, 235, 0.15)
-		border: 1px solid rgba(255, 255, 255, 0.05)
-		border-radius: 8px
-		min-height: 52px
+		color: #1d1d1f
+		text: 400 16px 1.4
+		background: #fff
+		border: 1px solid rgba(29, 29, 31, .7)
+		border-radius: 60px
+		min-height: 40px
 		padding: 0 16px
 		width: 100%
 		outline: none
@@ -57,9 +59,11 @@
 		resize: none
 
 		&:focus
+			border-color: #7373f5
+			
 			&::placeholder
 				color: transparent
 
 		&::placeholder
-			color: rgba(255, 255, 255, .3)
+			color: rgba(29, 29, 31, .7)
 

@@ -146,11 +146,6 @@ let closeButtons = document.querySelectorAll("[data-close-modal]");
 function openModal(modalId) {
     let modal = document.getElementById(modalId);
 
-    if (modal.getAttribute('id') === 'modal-auth') {
-        authSlider.params.autoplay = { delay: 4000 };
-        authSlider.autoplay.start();
-    }
-
     modal.style.display = "flex";
     modal.classList.add('modal--open');
     document.body.style.overflow = 'hidden';

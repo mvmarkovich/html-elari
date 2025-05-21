@@ -1,0 +1,46 @@
+extends layouts/layout.pug
+
+block title
+    title Catalog | Elari
+
+block breadcrumbs
+    block breadcrumbs
+    .breadcrumbs
+        .container.breadcrumbs__container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="./") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="catalog.html") Детские часы
+
+                li.breadcrumbs__item
+                    span.breadcrumbs__link KidGram Watch
+
+block content
+    .p-card
+        .p-card__container
+            .p-card__media
+
+
+            .p-card__main
+                .p-card__label Детские часы
+                h1.p-card__title KidGram Watch
+
+                .price.p-card__price
+                    .price__current 7990
+
+                .p-card__colors
+                    .p-card__colors-title Цвет
+
+                    ul.product__colors-list
+                        li.product__colors-item(style="background-image: url('img/content/product-colors/black.jpg');")
+                        li.product__colors-item(style="background-image: url('img/content/product-colors/pink.jpg');")
+                        li.product__colors-item(style="background-image: url('img/content/product-colors/blue.jpg');")
+
+                .p-card__nav
+                    button.btn.btn--accent.p-card__nav-btn(aria-label="Add cart") Добавить в корзину
+
+                
+
+    

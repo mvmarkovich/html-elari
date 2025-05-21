@@ -1,0 +1,58 @@
+.modal
+	position: fixed 0 0 0 0
+	background: rgba(27, 27, 27, 0.5)
+	justify-content: center
+	z-index: 9999
+	display: none
+	overflow: auto
+	padding: 16px @sm 32px
+	transition: opacity 0.3s ease-in-out
+
+	&__close
+		margin-left: 32px
+
+	&__square
+		position: relative
+		margin: auto
+		opacity: 0
+		transform: translateY(20px)
+		transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out
+		background: #fff
+		border-radius: 20px
+		max-width: 480px
+		width: 100%
+		padding: 20px
+
+	&__head
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 12px
+
+	&__title
+		text: 24px @lg 32px
+
+	&__desc
+		color: var(--neutral-neutral-50)
+		text: 16px
+
+	&__caption
+		text: 16px
+
+	&__form
+		margin-top: 24px
+
+	&__actions
+		display: flex
+		flex-wrap: nowrap
+		margin-top: 20px
+
+		.btn
+			width: 100%
+			min-height: 36px
+			margin-right: 12px
+
+			&:last-child
+				margin-right: 0
+
+
