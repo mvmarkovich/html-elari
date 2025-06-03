@@ -1749,10 +1749,12 @@ a.tag:active {
   gap: 12px 24px;
   margin-top: auto;
   padding-top: 12px;
+  margin-right: -8px;
+  margin-left: -8px;
 }
 
 .product__btn {
-  font-size: 11px;
+  font-size: 14px;
   min-height: 32px;
   padding: 0 8px 0 16px;
   z-index: 3;
@@ -2240,10 +2242,6 @@ a.tag:active {
 
   .home-watch__img--wrap {
     padding-top: 24.5%;
-  }
-
-  .product__btn {
-    font-size: 14px;
   }
 
   .product__btn::after {
@@ -3330,6 +3328,11 @@ a.tag:active {
 
   .product__price .price__current {
     font-size: 20px;
+  }
+
+  .product__nav {
+    margin-right: -12px;
+    margin-left: -12px;
   }
 
   .product__btn::after {
