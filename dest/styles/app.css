@@ -1752,7 +1752,7 @@ a.tag:active {
 }
 
 .product__btn {
-  font-size: 14px;
+  font-size: 11px;
   min-height: 32px;
   padding: 0 8px 0 16px;
   z-index: 3;
@@ -1760,14 +1760,14 @@ a.tag:active {
 
 .product__btn::after {
   content: '';
-  width: 24px;
-  height: 24px;
-  min-width: 24px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
   background-image: url('../img/icons/chevron-right-accent.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 14px;
-  margin-left: 4px;
+  margin-left: 2px;
   transition: .2s;
 }
 
@@ -2240,6 +2240,17 @@ a.tag:active {
 
   .home-watch__img--wrap {
     padding-top: 24.5%;
+  }
+
+  .product__btn {
+    font-size: 14px;
+  }
+
+  .product__btn::after {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    margin-left: 4px;
   }
 
   .home-benefits__body {
