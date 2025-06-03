@@ -103,14 +103,6 @@
             & ~ .product__info .product__title
                 color: @lg #7373f5
 
-            & ~ .product__info .product__btn
-                color: @lg #fff
-                background: @lg #7373f5
-                border-color: @lg #7373f5
-
-                &:after
-                    filter: @lg brightness(0) invert(1)
-
     &__labels
         display: flex
         flex-wrap: wrap
@@ -225,6 +217,7 @@
         text: 14px
         min-height: 32px
         padding: 0 8px 0 16px
+        z-index: 3
 
         &::after
             content: ''
@@ -236,6 +229,14 @@
             background-size: 14px @xl 18px
             margin-left: 4px @xl 8px
             transition: .2s
+
+        &:hover
+            color: @lg #fff
+            background: @lg #7373f5
+            border-color: @lg #7373f5
+
+            &:after
+                filter: @lg brightness(0) invert(1)
 
     &__preorder
         text: 14px
