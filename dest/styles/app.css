@@ -3092,10 +3092,6 @@ a.tag:active {
     margin-left: -16px;
   }
 
-  .catalog .product {
-    width: 20%;
-  }
-
   .catalog .product__img--wrap {
     min-height: 320px;
   }
@@ -3486,6 +3482,12 @@ a.tag:active {
 
   .footer__copy > *:after {
     right: -18px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .catalog .product {
+    width: 20%;
   }
 }
 
