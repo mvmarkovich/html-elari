@@ -23,6 +23,23 @@
             .price__current
                 text: 18px
 
+.recommended
+    &__slider
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        padding: 0 16px @md 0 48px @xl 0 64px
+        width: 100vw
+        overflow: hidden
+
+    .product
+        padding: 0
+        min-width: 220px @md 260px @xl 320px
+        max-width: 220px @md 260px @xl 320px
+
+        &__btn
+            width: 100%
+
 @media (min-width: 1400px)
     .catalog
         .product

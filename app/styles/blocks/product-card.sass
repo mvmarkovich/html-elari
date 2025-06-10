@@ -8,7 +8,7 @@
 
     &__container
         position: relative
-        padding: @lg 0px 80px
+        padding: @lg 0px 64px
         height: @lg 940px
         background: @lg linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(226, 229, 237, 0.5) 100%)
         padding-top: 100% @lg 0
@@ -21,9 +21,9 @@
         &.swiper
             display: none
             padding-top: @lg 120px
-            width: 100% @lg 565px
-            height: 100% @lg 565px
-            max-width: 100vw @lg 565px
+            width: 100% @lg 680px @xl 856px
+            height: 100% @lg 680px @xl 600px
+            max-width: 100vw @lg 856px
 
             &.js-active
                 display: block
@@ -34,20 +34,19 @@
                 top: 50%
                 left: 50%
                 transform: translate(-50%, -50%)
-                max-width: 565px
-                max-height: 565px
+                max-width: 600px
+                max-height: 600px
                 height: 100%
 
         .button-prev,
         .button-next
+            content: ''
             cursor: pointer
             position: absolute
-            top: 50%
-            transform: translateY(-50%)
-            margin-top: 60px
-            content: ''
-            size: 24px
+            width: 40px @xl 88px 
+            height: 100%
             background-size: contain
+            background-position: center
             background-repeat: no-repeat
             z-index: 2
             display: @lg-down none
@@ -57,11 +56,11 @@
 
         .button-prev
             left: 0
-            background-image: resolve("icons/chevron-left-dark.svg")
+            background-image: resolve("icons/product-card-slider-chevron-left.svg")
 
         .button-next
             right: 0
-            background-image: resolve("icons/chevron-right-dark.svg")
+            background-image: resolve("icons/product-card-slider-chevron-right.svg")
 
     &__swiper-side
         display: none
@@ -101,17 +100,17 @@
 
         .button-prev
             top: 0
-            background-image: resolve("icons/chevron-up-dark.svg")
+            background-image: resolve("icons/product-card-slider-chevron-up.svg")
 
         .button-next
             bottom: 0
-            background-image: resolve("icons/chevron-down-dark.svg")
+            background-image: resolve("icons/product-card-slider-chevron-down.svg")
 
     &__wrapper
         position: relative
         margin-top: -100px
         border-radius: 48px 48px 0 0
-        padding: 64px 80px
+        padding: 40px 16px @md 40px 48px @lg 64px
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) -9.8%, #FFFFFF 54.69%, rgba(255, 255, 255, 0.5) 108.53%), linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
         box-shadow: 0px 0px 32px 0px #4817331F
         border: 2px solid #FFFFFF
@@ -119,7 +118,7 @@
     &__specs
         position: absolute
         top: 36px
-        right: 80px
+        right: 64px
         max-width: 470px
         width: 100%
         display: flex
@@ -370,6 +369,9 @@
             &:last-child
                 margin: 0
 
+    &__recommended
+        margin-top: 48px @md 64px
+
 .mobile
     display: none
 
@@ -388,7 +390,6 @@
     .product-card__wrapper
         position: relative
         margin-top: -15px
-        padding: 40px 24px 56px 24px
         z-index: 1
 
     .product-card .swiper-pagination-bullet

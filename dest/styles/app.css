@@ -1971,6 +1971,25 @@ a.tag:active {
   font-size: 18px;
 }
 
+.recommended__slider {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 16px;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.recommended .product {
+  padding: 0;
+  min-width: 220px;
+  max-width: 220px;
+}
+
+.recommended .product__btn {
+  width: 100%;
+}
+
 .product-card {
   margin-right: -16px;
   margin-left: -16px;
@@ -2001,21 +2020,19 @@ a.tag:active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 565px;
-  max-height: 565px;
+  max-width: 600px;
+  max-height: 600px;
   height: 100%;
 }
 
 .product-card__swiper-main .button-next,.product-card__swiper-main .button-prev {
+  content: '';
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-top: 60px;
-  content: '';
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 100%;
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   z-index: 2;
 }
@@ -2026,12 +2043,12 @@ a.tag:active {
 
 .product-card__swiper-main .button-prev {
   left: 0;
-  background-image: url('../img/icons/chevron-left-dark.svg');
+  background-image: url('../img/icons/product-card-slider-chevron-left.svg');
 }
 
 .product-card__swiper-main .button-next {
   right: 0;
-  background-image: url('../img/icons/chevron-right-dark.svg');
+  background-image: url('../img/icons/product-card-slider-chevron-right.svg');
 }
 
 .product-card__swiper-side {
@@ -2076,19 +2093,19 @@ a.tag:active {
 
 .product-card__swiper-side .button-prev {
   top: 0;
-  background-image: url('../img/icons/chevron-up-dark.svg');
+  background-image: url('../img/icons/product-card-slider-chevron-up.svg');
 }
 
 .product-card__swiper-side .button-next {
   bottom: 0;
-  background-image: url('../img/icons/chevron-down-dark.svg');
+  background-image: url('../img/icons/product-card-slider-chevron-down.svg');
 }
 
 .product-card__wrapper {
   position: relative;
   margin-top: -100px;
   border-radius: 48px 48px 0 0;
-  padding: 64px 80px;
+  padding: 40px 16px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) -9.8%, #FFFFFF 54.69%, rgba(255, 255, 255, 0.5) 108.53%), linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
   box-shadow: 0px 0px 32px 0px #4817331F;
   border: 2px solid #FFFFFF;
@@ -2097,7 +2114,7 @@ a.tag:active {
 .product-card__specs {
   position: absolute;
   top: 36px;
-  right: 80px;
+  right: 64px;
   max-width: 470px;
   width: 100%;
   display: flex;
@@ -2388,6 +2405,10 @@ a.tag:active {
 
 .product-card__colors-item:last-child {
   margin: 0;
+}
+
+.product-card__recommended {
+  margin-top: 48px;
 }
 
 .mobile {
@@ -2998,10 +3019,27 @@ a.tag:active {
     min-height: 272px;
   }
 
+  .recommended__slider {
+    padding: 0 48px;
+  }
+
+  .recommended .product {
+    min-width: 260px;
+    max-width: 260px;
+  }
+
   .product-card {
     margin-right: -48px;
     margin-left: -48px;
     margin-bottom: -80px;
+  }
+
+  .product-card__wrapper {
+    padding: 40px 48px;
+  }
+
+  .product-card__recommended {
+    margin-top: 64px;
   }
 
   .sub-offer {
@@ -3301,7 +3339,7 @@ a.tag:active {
   }
 
   .product-card__container {
-    padding: 0px 80px;
+    padding: 0px 64px;
     height: 940px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(226, 229, 237, 0.5) 100%);
     padding-top: 0;
@@ -3309,13 +3347,17 @@ a.tag:active {
 
   .product-card__swiper-main.swiper {
     padding-top: 120px;
-    width: 565px;
-    height: 565px;
-    max-width: 565px;
+    width: 680px;
+    height: 680px;
+    max-width: 856px;
   }
 
   .product-card__swiper-side.js-active {
     display: block;
+  }
+
+  .product-card__wrapper {
+    padding: 64px;
   }
 
   .product-card__annonce {
@@ -3904,10 +3946,28 @@ a.tag:active {
     min-height: 320px;
   }
 
+  .recommended__slider {
+    padding: 0 64px;
+  }
+
+  .recommended .product {
+    min-width: 320px;
+    max-width: 320px;
+  }
+
   .product-card {
     margin-right: -64px;
     margin-left: -64px;
     margin-bottom: -120px;
+  }
+
+  .product-card__swiper-main.swiper {
+    width: 856px;
+    height: 600px;
+  }
+
+  .product-card__swiper-main .button-next,.product-card__swiper-main .button-prev {
+    width: 88px;
   }
 
   .sub-offer {
@@ -4014,7 +4074,6 @@ a.tag:active {
   .product-card__wrapper {
     position: relative;
     margin-top: -15px;
-    padding: 40px 24px 56px 24px;
     z-index: 1;
   }
 

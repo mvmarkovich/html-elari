@@ -122,6 +122,33 @@ if (window.innerWidth >= 768) {
     if (document.querySelector('.home-faq__slider')) sliderFaq.destroy(true, true)
 }
 
+new Swiper('.recommended__slider', {
+    loop: false,
+    slidesPerView: 'auto',
+    spaceBetween: 12,
+    arrows: true,
+
+    slideClass: 'product',
+
+    navigation: {
+        prevEl: ".recommended .slider-btn-prev",
+        nextEl: ".recommended .slider-btn-next"
+    },
+
+    breakpoints: {
+        '580': {
+            slidesPerView: 'auto',
+            spaceBetween: 16,
+        },
+
+        '992': {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+        },
+    },
+});
+
+
 //
 // Text blur
 //
