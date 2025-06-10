@@ -2,7 +2,6 @@
     position: relative
     border-radius: 24px @xl 34px
     overflow: hidden
-    padding: 40px 12px 12px 24px @md 32px 12px 12px 24px @xl 40px 16px 16px 32px
     background: #f5f8f0
 
     &__caption 
@@ -22,10 +21,8 @@
     &__img
         &--wrap
             position: relative
-            padding-top: 75.5% @sm 24.5%
+            padding-top: 145.5% @sm 45%
             overflow: hidden
-            margin: * -12px * -24px @xl * -16px * -32px
-            margin-top: 48px @xl 32px
 
             img, source
                 position: absolute
@@ -34,9 +31,10 @@
                 width: 100%
 
     &__nav
-        display: flex
-        justify-content: flex-end
-        margin-top: 24px @xl 32px
+        position: absolute
+        bottom: 12px @xl 16px
+        right: 12px @xl 16px
+        z-index: 2
 
     &__btn
         size: 32px @xl 44px
