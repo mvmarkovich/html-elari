@@ -1971,6 +1971,17 @@ a.tag:active {
   font-size: 18px;
 }
 
+.recommended__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+
+.recommended__head {
+  margin-bottom: 32px;
+}
+
 .recommended__slider {
   position: relative;
   left: 50%;
