@@ -372,6 +372,59 @@
     &__recommended
         margin-top: 48px @md 64px
 
+    &__also-like 
+        margin-top: 105px
+        display: @md-down none
+        
+        & > h2 
+            color: #343a40
+            text: 400 24px 1.1
+
+        & > div
+            margin-top: 32px
+            display: grid
+            align-items: center
+            justify-content: space-between
+            grid-template-columns: repeat(4, minmax(120px, 320px))
+            gap: 10px
+
+        &--item 
+            cursor: pointer
+            width: 100%
+
+            & > div 
+                display: flex
+                align-items: center
+                justify-content: center
+                height: 340px
+                background: #F1F4FB
+                border-radius: 16px
+
+                & > img 
+                    max-width: 180px
+                    max-height: 180px
+
+
+            & > span 
+                display: block
+                margin-top: 16px
+                opacity: 0.5
+                color: #343a40
+                font-size: 24px
+                font-weight: 600
+                line-height: 26px
+
+
+            & > p 
+                margin-top: 16px
+                overflow: hidden
+                white-space: nowrap
+                text-overflow: ellipsis
+                font-size: 36px
+                font-weight: 500
+                line-height: 39px
+                color: #343a40
+
 .mobile
     display: none
 
