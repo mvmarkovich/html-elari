@@ -16,6 +16,10 @@
             flex-direction: column
             flex: 1
 
+        &__colors-list
+            position: @sm-down relative
+            bottom: @sm-down -8px
+
         &__btn
             width: 100%
 
@@ -52,4 +56,9 @@
     .catalog
         .product
             width: 20%
+
+@media (max-width: 370px)
+    .catalog
+        .product__btn
+            text: 11px
     

@@ -1,0 +1,85 @@
+body
+    .popup-window.popup-window-with-titlebar
+        display: flex
+        flex-direction: column
+        padding: 10px
+        border-radius: 24px
+
+        .popup-window-close-icon
+            top: 15px
+            right: 15px
+            opacity: .5 !important
+
+            &:after
+                width: 20px
+                height: 20px
+                background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='10' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.666.621a.5.5 0 00-.707 0L5.002 3.58 2.044.62a.5.5 0 00-.707 0l-.714.714a.5.5 0 000 .707L3.581 5 .623 7.957a.5.5 0 000 .708l.714.713a.5.5 0 00.707 0L5.002 6.42l2.957 2.958a.5.5 0 00.708 0l.713-.714a.5.5 0 000-.707L6.422 5 9.38 2.042a.5.5 0 000-.707L8.666.62z' fill='%23828b95'/%3E%3C/svg%3E")
+
+            &:hover
+                opacity: 1 !important
+
+        .popup-window-titlebar
+            order: 2
+            height: auto
+            margin-bottom: 16px
+
+            &-text
+                color: #222222
+                display: block
+                width: 67%
+                margin: 0 auto 0
+                overflow: visible
+                text-wrap: wrap
+                font-size: 26px !important
+                font-weight: 400 !important
+                line-height: 32px
+                text-align: center
+                padding: 0 10px
+
+        .popup-window-content
+            order: 1
+            margin-bottom: 20px
+            padding-top: 32px
+
+            img
+                margin: 0 auto
+
+            p
+                display: none
+
+        .popup-window-buttons
+            order: 3
+            padding: 0
+            display: flex
+            flex-direction: column-reverse
+
+            .btn
+                &:first-child
+                    cursor: pointer
+                    display: flex  
+                    align-items: center
+                    justify-content: center
+                    width: 100%
+                    background-color: #3B3B4D 
+                    border: 1px solid #3B3B4D 
+                    color: #fff 
+                    outline: none 
+                    height: 56px
+                    font-size: 16px 
+                    border-radius: 12px 
+                    padding: 5px 10px 
+
+                &:last-child
+                    cursor: pointer
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    width: 100%
+                    background-color: #fff 
+                    border: 1px solid #fff 
+                    color: #3B3B4D 
+                    outline: none 
+                    height: 56px
+                    font-size: 16px 
+                    border-radius: 12px 
+                    padding: 5px 10px 
