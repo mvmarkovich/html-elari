@@ -1118,9 +1118,6 @@ body .popup-window.popup-window-with-titlebar .popup-window-buttons .btn:last-ch
   z-index: 97;
 }
 
-.header__container {
-}
-
 .header__row {
   display: flex;
   align-items: center;
@@ -2990,10 +2987,6 @@ body .popup-window.popup-window-with-titlebar .popup-window-buttons .btn:last-ch
     margin-bottom: -80px;
   }
 
-  .header__container {
-    padding: 0 24px;
-  }
-
   .categories {
     margin-right: -32px;
     margin-left: -32px;
@@ -3759,10 +3752,6 @@ body .popup-window.popup-window-with-titlebar .popup-window-buttons .btn:last-ch
 
   .header {
     padding: 12px 0;
-  }
-
-  .header__container {
-    padding: 0 40px;
   }
 
   .header__logo {
