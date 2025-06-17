@@ -1039,6 +1039,7 @@ body .popup-window.popup-window-with-titlebar .popup-window-titlebar {
 }
 
 body .popup-window.popup-window-with-titlebar .popup-window-titlebar-text {
+  font-family: "Gilroy";
   color: #222222;
   display: block;
   width: 67%;
@@ -1071,6 +1072,10 @@ body .popup-window.popup-window-with-titlebar .popup-window-buttons {
   padding: 0;
   display: flex;
   flex-direction: column-reverse;
+}
+
+body .popup-window.popup-window-with-titlebar .popup-window-buttons .btn {
+  font-family: "Gilroy";
 }
 
 body .popup-window.popup-window-with-titlebar .popup-window-buttons .btn:first-child {
